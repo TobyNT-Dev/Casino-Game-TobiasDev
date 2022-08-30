@@ -1,0 +1,178 @@
+@keyframes coinAnimation {
+  0% {
+    opacity: 100%;
+    margin-top: -25vw;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    margin-top: 15vw;
+  }
+}
+
+body {
+  background-image: linear-gradient(#161616, #353535);
+}
+
+.wallet-box {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wallet-box div .animatedCoin {
+  z-index: -5;
+  color: yellow;
+  display: inline-block;
+  position: absolute;
+  animation: coinAnimation ease-in 3s;
+  border-radius: 100%;
+  background-color: #d3d311;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 3.3vw;
+  vertical-align: center;
+  width: 4vw;
+  height: 4vw;
+  font-family: Impact;
+  border: solid yellow 2px;
+  box-shadow: rgba(255, 255, 0, 0.801) 0px 0px 15px;
+}
+
+.wallet-box .wallet {
+  display: inline-block;
+  font-size: 6vw;
+  font-family: Impact;
+  font-weight: lighter;
+  color: black;
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+  border-bottom: solid yellow 2px;
+  font-family: monospace;
+}
+
+.wallet-box .print-button {
+  display: block;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.425);
+  border: solid black 2px;
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: Impact;
+  color: black;
+  transition: 300ms;
+  padding: 10px 20px 10px 20px;
+  -webkit-text-stroke-color: #b9b932;
+  -webkit-text-stroke-width: 1px;
+}
+
+.wallet-box .print-button:hover {
+  border: solid yellow 2px;
+  color: black;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: rgba(255, 255, 0, 0.356) 0px 0px 20px;
+  background-color: rgba(34, 34, 34, 0);
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+}
+
+.shop-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30vw;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+.shop-box button {
+  display: block;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.425);
+  border: solid black 2px;
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: Impact;
+  color: black;
+  transition: 300ms;
+  padding: 10px 20px 10px 20px;
+  -webkit-text-stroke-color: #b9b932;
+  -webkit-text-stroke-width: 1px;
+  margin-bottom: 3vw;
+}
+
+.shop-box button:hover {
+  border: solid yellow 2px;
+  color: black;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: rgba(255, 255, 0, 0.356) 0px 0px 20px;
+  background-color: rgba(34, 34, 34, 0);
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+}
+
+.shop-box h4 {
+  display: inline-block;
+  font-size: 6vw;
+  font-family: Impact;
+  font-weight: lighter;
+  color: black;
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+  font-size: 3vw;
+  margin-top: 3vw;
+}
+
+.settings-box h3 {
+  display: inline-block;
+  font-size: 6vw;
+  font-family: Impact;
+  font-weight: lighter;
+  color: black;
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+}
+
+.settings-box h5 {
+  display: inline-block;
+  font-size: 2vw;
+  font-family: Impact;
+  font-weight: lighter;
+  color: black;
+}
+
+.settings-box button {
+  display: block;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.425);
+  border: solid black 2px;
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: Impact;
+  color: black;
+  transition: 300ms;
+  padding: 10px 20px 10px 20px;
+  -webkit-text-stroke-color: #b9b932;
+  -webkit-text-stroke-width: 1px;
+  margin: 0;
+  font-size: 2vw;
+}
+
+.settings-box button:hover {
+  border: solid yellow 2px;
+  color: black;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: rgba(255, 255, 0, 0.356) 0px 0px 20px;
+  background-color: rgba(34, 34, 34, 0);
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/app.js" defer></script>
+</head>
+<body>
+    <div class="wallet-box">
+        <h2 class="wallet" id="wallet">$0</h2>
+        <div id="coinBox"></div>
+        <button onclick="earnCoins()" class="print-button">$ Print Money $</button>
+    </div>
+    <div class="shop-box">
+        <div>
+            <h4>Auto Money Printer</h4>
+            <button id="autoPrinterButton" onclick="buyPrinter()">$1000</button>
+        </div>
+        <div>
+            <h4>Manual Money Printer Upgrade</h4>
+            <button id="upgradeButton" onclick="upgradePrinter()">$100</button>
+        </div>
+    </div>
+    <div class="settings-box">
+        <h3>Settings</h3><br/>
+        <h5>Autoprinter Draw Falling Coins</h5>
+        <button id="killSwitchButton" onclick="autoCoinFall()">On</button>
+    </div>
+</body>
+</html>
